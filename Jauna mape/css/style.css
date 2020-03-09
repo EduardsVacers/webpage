@@ -1,0 +1,41 @@
+.mainbox{
+    background-color: aliceblue;
+    width: 800px;
+    margin: 0px auto;
+}
+.menu{
+    background-color: blanchedalmond;
+    height: 36px;
+    text-align: center;
+}
+.leftside{
+    background-color: antiquewhite;
+    width: 100px;
+    float:left;
+}
+.main{
+    background-color: aqua;
+    width: 600px;
+    float:left;
+}
+.rightside{
+    background-color: beige;
+    width: 100px;
+    float:left;
+}
+.footer{
+    background-color: cadetblue;
+}
+.menu>ul>li{
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    background-color: gray;
+    position: relative;
+    top: 8px;
+    font-family: Tahoma, Serif;
+    font-size: 15px;
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
