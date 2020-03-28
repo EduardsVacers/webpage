@@ -1,26 +1,47 @@
+
 .mainbox{
     background-color: aliceblue;
-    width: 1010px;
+    width: 60%;
     margin: 0px auto;
+
+}
+
+#bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+#bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
 }
 .menu{
     background-color: blanchedalmond;
-    height: 36px;
+    height: 40px;
     text-align: center;
 }
 .leftside{
     background-color: antiquewhite;
-    width: 100px;
+    width: 10%;
     float:left;
 }
 .main{
     background-color: aqua;
-    width: 810px;
+    width: 70%;
+    height: 50%;
     float:left;
 }
 .rightside{
-    background-color: beige;
-    width: 100px;
+    background-color: blue;
+    width: 20%;
     float:left;
 }
 .footer{
@@ -43,19 +64,32 @@
 .main img{
     transition: 1s;
     padding: 15px;
-    width: 350px;
+    width: 45%;
 }
 .main img:hover{
     filter: grayscale(100%);
     transform: scale(1.1);
 }
-.main.iframe-container{
+.iframe-map{
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
 }
-.main.iframe-container iframe{
+.iframe-map iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.iframe-container iframe{
 
     position: absolute;
     top: 0;
@@ -63,4 +97,41 @@
     width: 100%;
     height: 100%;
 
+}
+.search-box{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: chocolate;
+    height: 20px;
+    border-radius: 20px;
+    padding:10px;
+}
+.search-box:hover > .search-txt{
+    width: 120px;
+    padding: 0 6px;
+}
+.search-btn{
+    color: sienna;
+    float: right;
+    width: 20px;
+    height: 20;
+    border-radius: 50%;
+    background: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 11px;
+    transition: 0.4s;
+    line-height: 20px;
+    width: 0px;
 }
